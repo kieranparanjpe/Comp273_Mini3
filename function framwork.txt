@@ -1,0 +1,13 @@
+jal -> put IP into $ra
+
+in function:
+move stack pointer by -4
+save ra into stack
+do some things
+load ra from stack back into ra
+move stack pointer by 4
+jr $ra
+
+factorial(n)
+if (n == 0)
+return 1
